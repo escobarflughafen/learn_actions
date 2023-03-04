@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /home/ubuntu/learn_actions
-    destination: /home/ubuntu/learn_actions/deploy
+  - source: /
+    destination: /deploy
     overwrite: true
 hooks:
   BeforeInstall:

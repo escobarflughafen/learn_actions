@@ -1,4 +1,6 @@
 #!/bin/bash
 
 echo $PWD
-npm install forever -g
+sudo apt install npm
+sudo apt install nodejs
+sudo npm install forever -g

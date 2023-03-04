@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "forever server.js"
+    "start": "forever server.js",
+    "stop": "forever stopall"
   },
   "author": "",
   "license": "ISC",

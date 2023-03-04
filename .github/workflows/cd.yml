@@ -12,13 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - run: echo ${{ secrets.REMOTE_TEST }}
     - uses: actions/checkout@v2
     - uses: easingthemes/ssh-deploy@v4.1.8
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         ARGS: "-rlgoDzvc -i"
         SOURCE: "./"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         SCRIPT_BEFORE: |

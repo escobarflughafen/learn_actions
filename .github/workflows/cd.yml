@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - run: echo ${{ secrets.REMOTE_HOST }}
+    - run: echo ${{ secrets.REMOTE_TEST }}
     - uses: actions/checkout@v2
     - uses: easingthemes/ssh-deploy@v4.1.8
       env:
